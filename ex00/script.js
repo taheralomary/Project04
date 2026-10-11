@@ -88,3 +88,15 @@ contactForm.addEventListener('submit', async function (event) {
         submitButton.textContent = originalText;
     }
 });
+
+
+const backToTop = document.querySelector('.back-to-top');
+
+backToTop.addEventListener('click', function (event) {
+    event.preventDefault();
+
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
