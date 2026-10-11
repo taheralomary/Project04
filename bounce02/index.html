@@ -1,0 +1,224 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Taher's personal cybersecurity portfolio">
+    <title>Taher Al-Omari | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header class="site-header">
+        <nav class="navbar">
+            <a href="#home" class="logo">Taher<span>.</span></a>
+
+            <div class="nav-links">
+                <a href="#about" data-i18n="navAbout">About</a>
+                <a href="#skills" data-i18n="navSkills">Skills</a>
+                <a href="#projects" data-i18n="navProjects">Projects</a>
+                <a href="#hobbies" data-i18n="navHobbies">Hobbies</a>
+                <a href="#contact" data-i18n="navContact">Contact</a>
+            </div>
+
+            <button
+                type="button"
+                id="languageToggle"
+                class="language-button"
+                aria-label="Switch to Arabic"
+            >
+                العربية
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Introduction -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <p class="eyebrow" data-i18n="heroEyebrow">
+                    CYBERSECURITY PORTFOLIO
+                </p>
+
+                <h1 data-i18n="heroTitle">
+                    Hello, I'm Taher.
+                </h1>
+
+                <p class="hero-description" data-i18n="heroDescription">
+                    Cybersecurity graduate interested in security
+                    operations, threat detection, and web development.
+                </p>
+
+                <a href="#projects" class="button" data-i18n="heroButton">
+                    Explore My Projects
+                </a>
+            </div>
+        </section>
+
+        <!-- About Me -->
+        <section class="section" id="about">
+            <div class="section-heading">
+                <p class="eyebrow" data-i18n="aboutEyebrow">01 · ABOUT ME</p>
+                <h2 data-i18n="aboutTitle">A little about me.</h2>
+            </div>
+
+            <div class="about-content">
+                <img
+                    src="assets/profile.jpg"
+                    alt="Portrait of Taher"
+                    class="profile-photo"
+                    data-i18n-alt="profileAlt"
+                >
+
+                <div>
+                    <h3 data-i18n="aboutSubtitle">
+                        Cybersecurity Graduate
+                    </h3>
+
+                    <p data-i18n="aboutText">
+                        I graduated with a degree in Cybersecurity from
+                        Zarqa University. I have practical experience with
+                        SIEM tools, security monitoring, and investigating
+                        security alerts. I also enjoy building projects
+                        that combine security and technology.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section class="section" id="skills">
+            <div class="section-heading">
+                <p class="eyebrow" data-i18n="skillsEyebrow">
+                    02 · SKILLS
+                </p>
+                <h2 data-i18n="skillsTitle">Tools I work with.</h2>
+            </div>
+
+            <div class="skills-grid">
+                <article class="skill-card">
+                    <h3 data-i18n="skillCyber">Cybersecurity</h3>
+                    <p>Wazuh · SIEM · SOC Analysis</p>
+                </article>
+
+                <article class="skill-card">
+                    <h3 data-i18n="skillNetworking">Networking</h3>
+                    <p>TCP/IP · Wireshark · Network Fundamentals</p>
+                </article>
+
+                <article class="skill-card">
+                    <h3 data-i18n="skillProgramming">Programming</h3>
+                    <p>C# · JavaScript · Python</p>
+                </article>
+
+                <article class="skill-card">
+                    <h3 data-i18n="skillWeb">Web Development</h3>
+                    <p>HTML · CSS · ASP.NET Core · SQL Server</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="section" id="projects">
+            <div class="section-heading">
+                <p class="eyebrow" data-i18n="projectsEyebrow">
+                    03 · PROJECT SHOWCASE
+                </p>
+                <h2 data-i18n="projectsTitle">Projects I've built.</h2>
+            </div>
+
+            <div class="projects-grid">
+                <article class="project-card">
+                    <span class="project-number">01</span>
+                    <h3 data-i18n="project1Title">
+                        Access Guard
+                    </h3>
+                    <p data-i18n="project1Text">
+                        A file integrity monitoring system built with C#,
+                        ASP.NET Core MVC, and SQL Server, using SHA-256
+                        hashing and AES-256 encryption.
+                    </p>
+                </article>
+
+                <article class="project-card">
+                    <span class="project-number">02</span>
+                    <h3 data-i18n="project2Title">
+                        Wazuh SIEM Home Lab
+                    </h3>
+                    <p data-i18n="project2Text">
+                        A security monitoring lab for collecting endpoint
+                        logs, monitoring alerts, and investigating
+                        activity across Windows and Linux.
+                    </p>
+                </article>
+
+                <article class="project-card">
+                    <span class="project-number">03</span>
+                    <h3 data-i18n="project3Title">
+                        Advanced SOC Home Lab
+                    </h3>
+                    <p data-i18n="project3Text">
+                        A hands-on environment for practicing log analysis,
+                        threat detection, security alert monitoring, and
+                        incident investigation.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Hobbies -->
+        <section class="section" id="hobbies">
+            <div class="section-heading">
+                <p class="eyebrow" data-i18n="hobbiesEyebrow">
+                    04 · HOBBIES
+                </p>
+                <h2 data-i18n="hobbiesTitle">Things I enjoy.</h2>
+            </div>
+
+            <div class="hobbies-grid">
+                <div class="hobby-card" data-i18n="hobby1">
+                    Learning new technologies
+                </div>
+                <div class="hobby-card" data-i18n="hobby2">
+                    Cybersecurity challenges
+                </div>
+                <div class="hobby-card" data-i18n="hobby3">
+                    Fitness and working out
+                </div>
+                <div class="hobby-card" data-i18n="hobby4">
+                    Building personal projects
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="section" id="contact">
+            <div class="section-heading">
+                <p class="eyebrow" data-i18n="contactEyebrow">
+                    05 · CONTACT
+                </p>
+                <h2 data-i18n="contactTitle">Let's connect.</h2>
+                <p data-i18n="contactText">
+                    Have a question or an opportunity? Feel free to reach out.
+                </p>
+            </div>
+
+            <a class="button" href="mailto:YOUR_EMAIL@example.com"
+               data-i18n="contactButton">
+                Send Me an Email
+            </a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p data-i18n="footerText">
+            © 2026 Taher Al-Omari. Built with HTML, CSS, and JavaScript.
+        </p>
+    </footer>
+
+</body>
+</html>
